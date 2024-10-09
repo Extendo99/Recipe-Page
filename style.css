@@ -1,0 +1,198 @@
+/* Reset CSS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Main Styles */
+
+body {
+  max-height: 100%;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  padding: 40px 32px;
+}
+
+.entry {
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 24px;
+  color: #312e2c;
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: #854632;
+}
+
+h3 {
+  padding-bottom: 16px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #7a284e;
+}
+
+p {
+  color: #5f564d;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+hr {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: #e3ddd7;
+}
+
+ul,
+ol {
+  padding-left: 24px;
+  margin-left: 0;
+  color: #5f564d;
+}
+
+ul li,
+ol li {
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+
+.preparation {
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.preparation ul li::marker {
+  color: #7a284e;
+}
+
+.ingredients ul li::marker {
+  color: #854632;
+}
+
+.instruction ol {
+  list-style-position: outside;
+}
+
+.instruction ol li::marker {
+  color: #854632;
+  font-weight: 700;
+}
+
+.nutrition table {
+  margin-top: 24px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition table td {
+  padding: 12px 0px 12px 32px;
+  color: #5f564d;
+}
+
+.nutrition table tr {
+  border-bottom: 1px solid #e3ddd7;
+}
+
+.nutrition table td:nth-child(2) {
+  padding: 0 36px 0 0;
+  color: #854632;
+  font-weight: 700;
+}
+
+.nutrition tr:last-child {
+  border-bottom: none;
+}
+
+/* Media Queries for Tablet 768px */
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 616px;
+    background-color: #F3E5D7;
+    min-height: 100vh;
+    margin: 128px auto 128px auto;
+  }
+
+  .wrapper {
+    background-color: white;
+    border-radius: 24px;
+    padding: 40px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  img {
+    width: 536px;
+    height: 300px;
+    border-radius: 24px;
+    margin-bottom: 40px;
+  }
+
+  .preparation {
+    background-color: #FFF7FB;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    width: 736px;
+  }
+
+}
